@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE store [
+<!ELEMENT store (section+)>
+<!ELEMENT section (shelf1+,shelf2+,shelf3+)>
+<!ELEMENT shelf1 (food+)>
+<!ELEMENT shelf2 (clothes+)>
+<!ELEMENT shelf3 (other+)>
+<!ELEMENT food (#PCDATA)>
+<!ELEMENT clothes (#PCDATA)>
+<!ELEMENT other (#PCDATA)>
+<!ATTLIST section domain CDATA " ">
+]>
+
+<store>
+	
+<section domain="1">
+<shelf1> <food> Apples </food> </shelf1>
+<shelf2> <clothes> Shirt </clothes> </shelf2>
+<shelf3> <other> Pen </other> </shelf3>
+</section>
+
+
+<section domain="2"> 
+<shelf1> <food> Cake </food> </shelf1>
+<shelf2> <clothes> Skirt </clothes> </shelf2>
+<shelf3> <other> A4_Paper </other> </shelf3>
+</section>
+
+
+<section domain="3">
+<shelf1> <food> Pineapple </food> </shelf1>
+<shelf2> <clothes> Jeans </clothes> </shelf2>
+<shelf3> <other> Sheets </other> </shelf3>
+</section>
+
+
+<section domain="4">
+<shelf1> <food> Yogurt </food> </shelf1>
+<shelf2> <clothes> Hat </clothes> </shelf2>
+<shelf3> <other> Laptop </other> </shelf3>
+</section>
+
+
+</store>
